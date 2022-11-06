@@ -7,12 +7,17 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 import qna.CannotDeleteException;
+import qna.constants.ContentType;
 import qna.domain.*;
 
 import java.time.LocalDateTime;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
+import qna.repository.AnswerRepository;
+import qna.repository.QuestionRepository;
+import qna.domain.QuestionTest;
+import qna.domain.UserTest;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
